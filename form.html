@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+</head>
+<body class="page__body">
+  <header class="main-header main-header--modification">
+    <nav class="navigation navigation--close navigation--nojs navigation--catalog">
+      <div class="navigation__header-conteiner">
+        <a class="navigation__logo logo" href="index.html" aria-label="ссылка на главную страницу сайта">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-cat-desc.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="50">
+            <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="37" alt="Логотип в виде кота.">
+          </picture>
+          <img class="logo__energy" src="img/logo-catenergy.svg" width="101" height="18" alt="Логотип Catenergy.">
+        </a>
+        <button class="navigation__toogle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="navigation__list menu">
+        <li class="menu__item menu__item--color">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="menu__item menu__item--color">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="menu__item menu__item--color menu__item--current-other">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="form-page-main">
+    <h1 class="visually-hidden">Анкета подбора питания для котов.</h1>
+    <section class="form">
+      <div class="form__headline-wrapper">
+        <h2 class="form__headline">Подбор программы</h2>
+        <p class="form__title">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+      </div>
+      <form class="form__fields">
+        <div class="form__interview-conteiner">
+          <ul class="form__list">
+            <li class="form__item">
+              <label class="form__label" for="inerview-name">ИМЯ:*</label>
+              <input class="form__input" type="text" id="inerview-name" name="inerview-name" placeholder="Барсик"
+                required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="inerview-weight">Вес (кг):*</label>
+              <input class="form__input" type="number" id="inerview-weight" name="inerview-weight" placeholder="7"
+                required>
+            </li>
+            <li class="form__item">
+              <label class="form__label" for="inerview-age">Возраст (лет):</label>
+              <input class="form__input" type="number" id="inerview-age" name="inerview-age" placeholder="7" required>
+            </li>
+          </ul>
+          <div class="form__purpuse purpuse">
+            <ul class="purpuse__list">
+              <li class="purpuse__item">
+                <label class="purpuse__control">
+                  <input class="purpuse__input" type="radio" value="lose" name="purpuse-group" checked>
+                  <span class="purpuse__mark"></span>
+                  <span class="purpuse__description">Похудение</span>
+                </label>
+              </li>
+              <li class="purpuse__item">
+                <label class="purpuse__control">
+                  <input class="purpuse__input" type="radio" value="gain" name="purpuse-group">
+                  <span class="purpuse__mark"></span>
+                  <span class="purpuse__description">Набор массы</span>
+                </label>
+              </li>
+              <li class="purpuse__item">
+                <label class="purpuse__control">
+                  <input class="purpuse__input" type="radio" value="advice" name="purpuse-group">
+                  <span class="purpuse__mark"></span>
+                  <span class="purpuse__description">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__fieldset form__fieldset--contact-details">
+          <fieldset class="form__wrapper сontact-details">
+            <legend class="form__legend form__legend--сontact-details">Контактные данные<br>
+              (владельца кота)</legend>
+            <ul class="сontact-details__list">
+              <li class="сontact-details__item">
+                <label class="form__label form__label--email" for="сontact-details-email">E-mail:*</label>
+                <input class="form__input form__input--email" type="email" id="сontact-details-email"
+                  name="сontact-details-email" placeholder="kuklachev@gmail.com" required>
+                <svg class="form__input-iconemeil" width="20" height="20" viewbox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#email" />
+                </svg>
+              </li>
+              <li class="сontact-details__item">
+                <label class="form__label form__label--tel" for="сontact-details-telephone">Телефон:*</label>
+                <input class="form__input form__input--tel" type="tel" id="сontact-details-telephone"
+                  name="сontact-details-telephone" placeholder="8 (960) 900-60-90" required>
+                <svg class="form__input-icontel" width="20" height="20" viewbox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#phone" />
+                </svg>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form__fieldset form__fieldset--comments">
+          <fieldset class="form__wrapper ">
+            <legend class="form__legend form__legend--comments">
+              Комментарий</legend>
+            <textarea class="form__comments" name="comment" required
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+        </div>
+        <div class="form__fieldset form__fieldset--more-details">
+          <fieldset class="form__wrapper more-details">
+            <legend class="form__legend form__legend--more-details">Дополнительно</legend>
+            <ul class="more-details__list">
+              <li class="more-details__item">
+                <label class="more-details__label">
+                  <input class="more-details__input" type="checkbox" name="sweetener" checked>
+                  <span class="more-details__mark"></span>
+                  <span class="more-details__description">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="more-details__item">
+                <label class="more-details__label">
+                  <input class="more-details__input" type="checkbox" name="water">
+                  <span class="more-details__description">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="more-details__item">
+                <label class="more-details__label">
+                  <input class="more-details__input" type="checkbox" name="milk">
+                  <span class="more-details__description">Молоко</span>
+                </label>
+              </li>
+              <li class="more-details__item">
+                <label class="more-details__label">
+                  <input class="more-details__input" type="checkbox" name="vitamins">
+                  <span class="more-details__description">Витамины</span>
+                </label>
+              </li>
+            </ul>
+            <button class="form__button button button--condition" type="submit">Отправить заявку</button>
+            <p class="form__note">* — Обязательные поля</p>
+          </fieldset>
+        </div>
+      </form>
+    </section>
+    <section class="partnership-catalog">
+      <div class="partnership partnership--modification">
+        <h3 class="partnership__text partnership__text--modification">приглашаем<br>
+          к сотрудничеству
+          дилеров!</h3>
+        <address class="partnership__adress partnership__adress--br-mod partnership__adress--modification">ул. Большая
+          Конюшенная, д.<br> 19/8
+          <span
+            class="partnership__adress partnership__adress--nottransfer partnership__adress--transfer">Санкт-<br>Петербург</span>
+        </address>
+      </div>
+    </section>
+    <section class="map-form">
+      <div class="map">
+        <iframe class="map__view map__view--pin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858715872447!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669998404254!5m2!1sru!2sru"
+          width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__conteiner">
+        <img class="footer__logo footer__logo--condition" width="128" height="24" src="img/footer-logo.svg"
+          alt="Логотип Cat Energy">
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
+                aria-label="cсылка на вконтакте">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#vkontakte" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="cсылка на ютуб">
+                <span class="visually-hidden">Ютуб.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#youtube" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"
+                aria-label="cсылка на телеграм">
+                <span class="visually-hidden">Телеграм.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#telegram" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="ссылка на сайт HTML Academy">
+          <p class="footer__logo-text">HTML Academy</p>
+          <svg class="footer__logo-svg" width="27" height="35" viewbox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#htmlacademy" />
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
